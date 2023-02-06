@@ -139,7 +139,7 @@ header{
 .container_interno_benefits{
     width: 60%;
     height: auto;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
     border-style: dotted; /*debug feature*/
@@ -147,10 +147,9 @@ header{
 }
 
 .benefits_card{
-    width: 100%;
+    width: calc(100% / 3 - 10px);
     height: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 5px;
     background-color: brown;
     border-style: dotted; /*debug feature*/
     border-color: aliceblue; /*debug feature*/
@@ -183,6 +182,18 @@ header{
         width: 100%;
         flex-wrap: wrap;
     }
+    .container_interno_employee{
+        width: 90%;
+    }
+
+    .benefits_card{
+        width: calc(100% / 2 - 10px);
+        height: 350px;
+    }
+
+    .container_interno_benefits {
+        width: 90%;
+    }
 }
 
 
@@ -203,5 +214,10 @@ header{
 
     .employee_card{
         height: 350px;
+    }
+
+    .benefits_card {
+        width: 100%;
+        height: 400px
     }
 }
