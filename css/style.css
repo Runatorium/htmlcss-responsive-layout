@@ -98,6 +98,65 @@ header{
     border-color: aliceblue; /*debug feature*/
 }
 
+.container_employee{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    justify-content: center;
+    border-style: dotted; /*debug feature*/
+    border-color: rgb(0, 0, 0); /*debug feature*/
+}
+
+.container_interno_employee{
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
+
+.employee_card{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: brown;
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
+.container_benefits{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    justify-content: center;
+    border-style: dotted; /*debug feature*/
+    border-color: rgb(0, 0, 0); /*debug feature*/
+}
+.container_interno_benefits{
+    width: 60%;
+    height: auto;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
+.benefits_card{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: brown;
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
+
 /*tablet header responsive*/
 
 @media screen and (max-width: 1024px){
@@ -142,5 +201,7 @@ header{
         height: 650px;
     }
 
-
+    .employee_card{
+        height: 350px;
+    }
 }
