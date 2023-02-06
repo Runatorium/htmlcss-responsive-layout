@@ -183,6 +183,40 @@ header{
     border-color: aliceblue; /*debug feature*/
 }
 
+
+.container_getstarted{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    justify-content: center;
+    border-style: dotted; /*debug feature*/
+}
+
+.container_interno_getstarted{
+    width: 40%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: dotted; /*debug feature*/
+    border-color: rgb(141, 192, 237); /*debug feature*/
+}
+
+.getstarted{
+    width: 100%;
+    height: 600px; /*debug feature*/
+    margin: 5px;
+    background-color: brown;
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(42, 41, 41);
+}
+
 /*tablet header responsive*/
 
 @media screen and (max-width: 1024px){
@@ -224,6 +258,8 @@ header{
 }
 
 
+/*mobile header responsive*/
+
 @media screen and (max-width: 460px){
 
     .topcontainer{
@@ -254,6 +290,14 @@ header{
     }
 
     .card_about_us{
+        width: 100%;
+    }
+
+    .container_interno_getstarted{
+        width: 90%;
+    }
+
+    .getstarted{
         width: 100%;
     }
 }
