@@ -44,12 +44,34 @@ header{
     display: none;
 }
 
+.container{
+    justify-content: center;
+    width: 100%;
+}
 
+.topcontainer {
+    width: 60%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: black; /*debug feature*/
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
 
+.topcontainer div{
+    width: calc(100% / 3 - 1.25rem);
+    height: 270px;
+    margin: 0.5rem;
+    background-color: blueviolet; /*debug feature*/
+}
 
-/*mobile header responsive*/
+.topcontainer div:first-of-type{
+    width: calc((100% / 3)*2 - 1.50rem);
+}
 
-@media screen and (max-width: 900px){
+/*tablet header responsive*/
+
+@media screen and (max-width: 980px){
     .headerlist{
         display: none;
     }
@@ -61,5 +83,14 @@ header{
     .headercontainer{
         width: 100%;
     }
+
+}
+
+
+@media screen and (max-width: 530px){
+
+    .topcontainer div
+
+
 
 }
