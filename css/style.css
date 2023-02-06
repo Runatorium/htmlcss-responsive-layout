@@ -60,7 +60,7 @@ header{
 
 .topcontainer div{
     width: calc(100% / 3 - 1.25rem);
-    height: 270px;
+    height: 325px;
     margin: 0.5rem;
     background-color: blueviolet; /*debug feature*/
 }
@@ -69,9 +69,43 @@ header{
     width: calc((100% / 3)*2 - 1.50rem);
 }
 
+.container_mid{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    justify-content: center;
+    background-color: rgb(76, 2, 123); /*debug feature*/
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
+.container_interno{
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
+
+.containerbox{
+    width: 50%;
+    height: 600px;
+    background-color: brown;
+    border-style: dotted; /*debug feature*/
+    border-color: aliceblue; /*debug feature*/
+}
+
 /*tablet header responsive*/
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1024px){
+
+    .topcontainer{
+        width: 90%;
+    }
+
     .headerlist{
         display: none;
     }
@@ -83,14 +117,30 @@ header{
     .headercontainer{
         width: 100%;
     }
-
+    .container_interno{
+        width: 90%;
+    }
+    .containerbox{
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
 
 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 460px){
 
-    .topcontainer div
+    .topcontainer{
+        width: 90%;
+    }
 
+    .topcontainer div{
+        width: 100%;
+    }
+
+    .topcontainer div:first-of-type{
+        width: 100%;
+        height: 650px;
+    }
 
 
 }
