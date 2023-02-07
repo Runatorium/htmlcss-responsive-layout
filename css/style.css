@@ -67,6 +67,19 @@ header{
     margin-right: 5px;
  }
 
+ #morebtn{
+    padding: 12px;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: 35px;
+    font-size: 18px;
+    color: white;
+    background-color: var(--violet);
+ }
+
 /* Buttons*/
 
 
@@ -266,10 +279,18 @@ header{
     font-size: 16px;
     color: white;  
 }
-
+.container_midbenefits{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    flex-direction: column ;
+    justify-content: center;
+    background-color: var(--violet);
+}
 .container_interno_benefits{
     width: 60%;
     height: auto;
+    align-self: center;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -277,13 +298,41 @@ header{
     border-color: aliceblue; /*debug feature*/
 }
 
+.container_midbenefits{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+}
+
 .benefits_card{
     width: calc(100% / 3 - 10px);
-    height: 200px;
+    height: auto;
     margin: 5px;
-    background-color: brown;
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
+    padding: 25px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.benefits_card p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+    color: gray;
+}
+
+.benefits_card h3{
+    font-size: 20px;
+    margin-top: 30px;
+    color: var(--violet);
+    text-align: left;
+}
+
+.benefits_card h2{
+    font-size: 64px;
+    color: var(--violet);
+    text-align: left;
+    margin-top: 20px;
 }
 
 .container_interno_about_us{
@@ -388,7 +437,7 @@ footer{
 
     .benefits_card{
         width: calc(100% / 2 - 10px);
-        height: 350px;
+        height: auto;
     }
 
     .container_interno_benefits {
@@ -424,7 +473,7 @@ footer{
     }
 
     .employee_card{
-        height: 350px;
+        height: auto;
         flex-direction: column;
 
     }
