@@ -5,26 +5,27 @@
 }
 
 
+html{
+    font-family: sans-serif;
+}
+
 .flex {
     display: flex;
 }
 
 header{
     justify-content: center;
-    background-color: aqua; /*debug feature*/
+    background-color: rgb(0, 136, 255);
 }
 
 .headercontainer{
     justify-content: space-between;
     width: 60%;
-    height: 60px; /*debug feature*/
 }
 
 .headerbox{
     justify-content: center;
     align-items: center;
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
 }
 
 .headerlist{
@@ -32,8 +33,27 @@ header{
     list-style: none;
 }
 
+.headerlist a{
+    text-decoration: none;
+    color: white;
+}
+
+#getstartedbtn {
+    background-color: cornflowerblue;
+    padding: 7px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 12px;
+}
+
+
 .headerlist li{
-    padding: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .headerbox img{
@@ -98,15 +118,6 @@ header{
     border-color: aliceblue; /*debug feature*/
 }
 
-.container_employee{
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-    justify-content: center;
-    border-style: dotted; /*debug feature*/
-    border-color: rgb(0, 0, 0); /*debug feature*/
-}
-
 .container_interno_employee{
     width: 60%;
     height: auto;
@@ -128,14 +139,6 @@ header{
     border-color: aliceblue; /*debug feature*/
 }
 
-.container_benefits{
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-    justify-content: center;
-    border-style: dotted; /*debug feature*/
-    border-color: rgb(0, 0, 0); /*debug feature*/
-}
 .container_interno_benefits{
     width: 60%;
     height: auto;
@@ -153,15 +156,6 @@ header{
     background-color: brown;
     border-style: dotted; /*debug feature*/
     border-color: aliceblue; /*debug feature*/
-}
-
-
-.container_about_us{
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-    justify-content: center;
-    border-style: dotted; /*debug feature*/
 }
 
 .container_interno_about_us{
@@ -231,6 +225,7 @@ footer{
 
     .headerbox i{
         display: inline;
+        margin-right: 20px;
     }
 
     .headercontainer{
