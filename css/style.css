@@ -7,6 +7,7 @@
 :root{
     --lightblue1: rgb(0, 136, 255);
     --ultralightblue: rgb(111, 174, 230);
+    --violet: #9593e6;
 }
 
 html{
@@ -157,9 +158,7 @@ header{
     height: auto;
     margin-top: 60px;
     justify-content: center;
-    background-color: rgb(76, 2, 123); /*debug feature*/
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
+    background-color: var(--violet);
 }
 
 .container_interno{
@@ -168,17 +167,46 @@ header{
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
 }
 
 
 .containerbox{
     width: 50%;
-    height: 600px;
-    background-color: brown;
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
+}
+
+.containerbox img{
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+.containerbox h2{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.containerbox p{
+    margin-bottom: 20px;
+}
+
+.containerbox.flex {
+    justify-content: center;
+}
+
+#whitebox{
+    padding: 20px;
+    height: auto;
+    width: 80%;
+    margin-top: 25%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#whitebox h2{
+    color: black;
+    text-align: center;
 }
 
 .container_interno_employee{
@@ -301,6 +329,22 @@ footer{
         width: 100%;
         flex-wrap: wrap;
     }
+    
+    .containerbox img{
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #whitebox{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .containerbox h2{
+        font-size: 42px;
+    }
+
     .container_interno_employee{
         width: 90%;
     }
@@ -331,6 +375,10 @@ footer{
 
     .topcontainer div{
         width: 100%;
+    }
+
+    .containerbox h2{
+        font-size: 28px;
     }
 
     .topcontainer div:first-of-type{
