@@ -80,6 +80,23 @@ header{
     background-color: var(--violet);
  }
 
+
+#linkedinbtn{
+    padding: 10px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: 35px;
+    font-size: 18px;
+    color: white;
+    background-color: var(--violet);
+}
+#linkedinbtn i{
+    margin-right: 5px;
+}
+
 /* Buttons*/
 
 
@@ -294,8 +311,6 @@ header{
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
 }
 
 .container_midbenefits{
@@ -335,26 +350,48 @@ header{
     margin-top: 20px;
 }
 
+.container_midaboutus{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    justify-content: center;
+    background-color: white;
+}
 .container_interno_about_us{
     width: 60%;
     height: auto;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-style: dotted; /*debug feature*/
-    border-color: rgb(141, 192, 237); /*debug feature*/
 }
 
 .card_about_us{
     width: calc(100% / 2 - 10px);
-    height: 600px; /*debug feature*/
-    margin: 5px;
-    background-color: brown;
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
+    padding: 20px;
 }
 
+.card_about_us h1{
+    color: var(--violet);
+    font-size: 42px;
+}
 
+.card_about_us p{
+    font-size: 16px;
+    margin-top: 40px;
+    line-height: 2rem;
+}
+
+.card_about_us img{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+.card_about_us h2{
+    color: var(--violet);
+    font-size: 22px;
+    margin-top: 15px;
+}
 .container_getstarted{
     width: 100%;
     height: auto;
@@ -422,6 +459,7 @@ footer{
         object-fit: cover;
     }
 
+    
     #whitebox{
         width: 100%;
         margin-top: 20px;
@@ -443,6 +481,18 @@ footer{
     .container_interno_benefits {
         width: 90%;
     }
+
+    .card_about_us img{
+        height: 170px;
+        width: 170px;
+
+    }
+    .card_about_us p{
+      font-size: 14px;
+      line-height: 1.2rem;
+
+    }
+    
 }
 
 
@@ -509,4 +559,11 @@ footer{
     .getstarted{
         width: 100%;
     }
+     
+    .card_about_us {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+   
 }
