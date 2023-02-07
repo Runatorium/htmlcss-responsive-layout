@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --lightblue1: rgb(0, 136, 255);
+    --ultralightblue: rgb(111, 174, 230);
+}
 
 html{
     font-family: sans-serif;
@@ -15,7 +19,7 @@ html{
 
 header{
     justify-content: center;
-    background-color: rgb(0, 136, 255);
+    background-color: var(--lightblue1);
 }
 
 .headercontainer{
@@ -38,13 +42,32 @@ header{
     color: white;
 }
 
+
+/* Buttons*/
 #getstartedbtn {
-    background-color: cornflowerblue;
+    background-color: var(--lightblue1);
     padding: 7px;
-    border-radius: 20px;
+    border-radius: 15px;
     border-style: none;
     font-size: 12px;
 }
+
+#appstorebtn{
+    background-color: var(--lightblue1);
+    padding: 12px;
+    width: 90%;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+ #appstorebtn i{
+    margin-right: 5px;
+ }
+
+/* Buttons*/
+
 
 
 .headerlist li{
@@ -57,7 +80,7 @@ header{
 }
 
 .headerbox img{
-    margin: 1rem;  /*debug feature*/
+    margin: 1rem;
 }
 
 .headerbox i{
@@ -73,20 +96,37 @@ header{
     width: 60%;
     flex-wrap: wrap;
     margin-top: 20px;
-    background-color: black; /*debug feature*/
-    border-style: dotted; /*debug feature*/
-    border-color: aliceblue; /*debug feature*/
 }
 
-.topcontainer div{
+.cnt {
     width: calc(100% / 3 - 1.25rem);
     height: 325px;
     margin: 0.5rem;
-    background-color: blueviolet; /*debug feature*/
+    background-color: var(--ultralightblue);
+    border-radius: 10px;
 }
 
-.topcontainer div:first-of-type{
-    width: calc((100% / 3)*2 - 1.50rem);
+
+.cnt h2{
+    margin-bottom: 25px;
+    color: var(--lightblue1) ;
+}
+
+.internal_container {
+    flex-direction: row;
+    width: calc((100% / 3)*2 - 0.5rem);
+    background-color: var(--ultralightblue);
+    border-radius: 10px;
+}
+
+.box{
+    width: 50%;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .container_mid{
